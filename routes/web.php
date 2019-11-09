@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('blade', function () {
+    return view('child');
+});
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/registration', function () {
+    return view('registration');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('data/{id}',function($id) {
+   echo 'ID: '.$id;
+});
+
+
+?>
